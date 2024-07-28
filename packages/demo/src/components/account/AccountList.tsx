@@ -125,7 +125,9 @@ function Component({
                 newBought[index] = true
                 return newBought
               })
-              alert(`🎉🥳 Congrats on buying ${item.name}!! 🎉🥳`)
+              alert(
+                `🎉🥳 Congrats on buying ${item.name} for your bunny!! 🎉🥳`
+              )
             }
           } catch (e) {
             update({

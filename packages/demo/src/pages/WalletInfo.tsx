@@ -74,6 +74,7 @@ function Component({ className }: Props): React.ReactElement {
       {!showGame ? (
         <Button
           className={CN('__wallet-btn', '__sub-wallet-sign-btn')}
+          style={{ backgroundColor: '#ffafcc' }}
           onClick={() => setShowGame(true)}
           block={true}
         >
@@ -81,7 +82,7 @@ function Component({ className }: Props): React.ReactElement {
         </Button>
       ) : (
         <iframe
-          src="http://localhost:51833/"
+          src="http://localhost:57151/"
           height="800px"
           width="100%"
         ></iframe>
