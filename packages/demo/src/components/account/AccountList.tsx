@@ -171,7 +171,10 @@ function Component({
     ({ address, name }: AccountMapType) => {
       const key = `${address}_${name}`
       const _middleItem = (
-        <div className={'__account-item-middle'}>
+        <div
+          className={'__account-item-middle'}
+          style={{ backgroundColor: '#cdb4db', color: 'black' }}
+        >
           <div className={'__account-item-info'}>
             <span className="__account-item__title">Wallet name:</span>
             <span className="__account-item__content">
