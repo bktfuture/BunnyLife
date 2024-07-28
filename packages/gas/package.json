@@ -1,0 +1,42 @@
+{
+  "name": "@subwallet-connect/gas",
+  "version": "1.0.7",
+  "description": "Estimate the gas prices needed to get a transaction in to the next block for Ethereum Mainnet and Polygon Matic Mainnet.",
+  "keywords": [
+    "gas",
+    "Ethereum",
+    "Polygon"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blocknative/web3-onboard.git",
+    "directory": "packages/gas"
+  },
+  "homepage": "https://subwallet.app",
+  "bugs": {
+    "url": "https://github.com/blocknative/web3-onboard/issues"
+  },
+  "module": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "browser": "dist/index.js",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc -w",
+    "type-check": "tsc --noEmit"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.5.5"
+  },
+  "dependencies": {
+    "@subwallet-connect/common": "^1.0.7",
+    "rxjs": "^7.5.2",
+    "joi": "17.8.1"
+  },
+  "author": ""
+}

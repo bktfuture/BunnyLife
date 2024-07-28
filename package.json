@@ -1,0 +1,84 @@
+{
+  "name": "subwallet-connect-monorepo",
+  "version": "1.0.7",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "./packages/*"
+    ],
+    "nohoist": [
+      "**/react-dom",
+      "**/csstype"
+    ]
+  },
+  "description": "SubWallet-Connect fork from Web3-Onboard. It makes it simple to connect not only Ethereum but also Polkadot hardware and software wallets to your dapp. Features standardised spec compliant web3 providers for all supported wallets, framework agnostic modern javascript UI with code splitting, CSS customization, multi-chain and multi-account support, reactive wallet state subscriptions and real-time transaction state change notifications.",
+  "keywords": [
+    "Ethereum",
+    "Polkadot",
+    "SubWallet",
+    "Web3",
+    "EVM",
+    "dapp",
+    "Multichain",
+    "Wallet",
+    "Transaction",
+    "Provider",
+    "Hardware Wallet",
+    "Notifications",
+    "React",
+    "Svelte",
+    "Vue",
+    "Next",
+    "Nuxt",
+    "MetaMask",
+    "Coinbase",
+    "WalletConnect",
+    "Ledger",
+    "Trezor",
+    "Connect Wallet",
+    "Ethereum Hooks",
+    "Blocknative",
+    "Mempool",
+    "pending",
+    "confirmed",
+    "Injected Wallet",
+    "Crypto",
+    "Crypto Wallet",
+    "Sequence"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Koniverse/SubWallet-Connect.git",
+    "directory": "packages/core"
+  },
+  "homepage": "https://onboard.blocknative.com",
+  "bugs": "https://github.com/Koniverse/SubWallet-Connect/issues",
+  "scripts": {
+    "install-m1-mac": "yarn install --ignore-optional",
+    "format": "prettier --write 'packages/**/*.ts'",
+    "dev": "yarn wsrun dev",
+    "build": "yarn wsrun --serial build",
+    "type-check": "yarn wsrun type-check",
+    "file-check": "yarn install --check-files",
+    "check-all": "yarn build && yarn file-check && yarn type-check",
+    "test-playwright": "cd test && yarn && yarn playwright test",
+    "update-version": "node scripts/update-version.js",
+    "publish-version": "node scripts/publish-version.js"
+  },
+  "devDependencies": {
+    "prettier": "^2.4.1",
+    "prettier-plugin-svelte": "^2.4.0",
+    "typescript": "^4.5.5"
+  },
+  "dependencies": {
+    "wsrun": "^5.2.4"
+  },
+  "resolutions": {
+    "minimist": "^1.2.6",
+    "axios": "^1.6.5",
+    "async": "^2.6.4",
+    "follow-redirects": "1.14.9",
+    "ansi-regex": "^4.1.1",
+    "got": "^11.8.5"
+  }
+}
